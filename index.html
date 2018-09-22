@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <style type="text/css" href="main.css"></style>
+        <title>Ayushi Keep</title>
+
+    </head>
+    <body>
+        <button onclick='createNote()'>Create a Note</button>
+        <div class="create-note" id="createNote">
+            <label> Title </label>
+            <input id="noteTitle" class="note-title-input" type="text" name="note-title" />
+            <label> Content </label>
+            <textarea id="noteBody" class="note-body-input" name="note-body"></textarea>
+            <button onclick='saveNote()'> Save </button>
+        </div>
+
+
+        <div class="notes">
+            <h2> My Notes </h2>
+            <ul class="notes-list" id="notesList">
+
+
+            </ul>
+        </div>
+
+        <div class="notes-archieve">
+            <h3> Archieves </h3>
+
+            <ul class="notes-list" id="archievedList">
+
+
+            </ul>
+        </div>
+        <script type="text/javascript" src="keep.js"></script>
+    </body>
+
+</html>
